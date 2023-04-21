@@ -9,7 +9,6 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import ElementPlus from 'unplugin-element-plus/vite'
 import { visualizer } from 'rollup-plugin-visualizer'
 import viteCompression from 'vite-plugin-compression'
-import proxyUrl from './config'
 
 export default defineConfig({
   optimizeDeps: {
@@ -41,12 +40,6 @@ export default defineConfig({
         ws: true,
         changeOrigin: true,
         rewrite: path => path.replace(/^\/api/, ''),
-      },
-      '/act': {
-        target: proxyUrl,
-        ws: true,
-        changeOrigin: true,
-        rewrite: path => path.replace(/^\/act/, '/act'),
       },
     },
   },
