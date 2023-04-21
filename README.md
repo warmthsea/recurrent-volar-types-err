@@ -1,3 +1,7 @@
+https://github.com/vuejs/language-tools/issues/2647
+https://github.com/element-plus/element-plus/issues/12529
+https://github.com/pure-admin/vue-pure-admin/issues/523
+
 ```bash
 pnpm i  
 pnpm run dev
