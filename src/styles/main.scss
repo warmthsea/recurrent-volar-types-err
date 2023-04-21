@@ -1,0 +1,57 @@
+@use "element-plus/theme-chalk/src/dark/css-vars.scss" as *;
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --main-color: rgb(37,127,128);
+  --text-main-color: rgb(114,200,181);
+}
+
+html.dark {
+  --main-color: rgb(0,0,0,0.76);
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-clip: content-box;
+  border: 2px solid transparent;
+  background-color: inherit;
+  background-color: rgba(0, 0, 0, 0.15);
+
+  &:hover {
+      background-color: rgba(0, 0, 0, 0.4) ;
+  }
+}
+
+#nprogress .bar {
+	background: #ffffff !important; //自定义颜色
+}
+
+
+/* fade-slide */
+.fade-slide-leave-active,
+.fade-slide-enter-active {
+  transition: all 0.3s;
+}
+
+.fade-slide-enter-from {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.fade-slide-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}

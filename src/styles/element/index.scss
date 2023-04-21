@@ -1,0 +1,16 @@
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': rgb(37,127,128),
+    ),
+  ),
+  $date-editor:(
+    'daterange-width': 300px,
+  )
+);
+
+html.dark {
+  .el-loading-mask{
+    border-radius: 3px;
+  }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <title>企业外包管理</title>
+  <meta name="description" content="Opinionated Vite Starter Template">
+  <script src="http://192.168.10.131:18081/web-apps/apps/api/documents/api.js"></script>
+  <style>
+    html,
+    body,
+    #app {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    /* .preload {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 1px;
+      background: radial-gradient(circle at 1px 1px,#E4E4E4 1px,#FDFDFD 0);
+      background-size: 16px 16px;
+    }
+
+    .preload.dark {
+      background: radial-gradient(circle at 1px 1px,#524D52 1px,#2c2c2c 0);
+      background-size: 16px 16px;
+    } */
+
+    /* .preload .load-name {
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 62px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .preload .load-title {
+      color: #595959;
+      font-weight: 400;
+      font-size: 14px;
+      width: fit-content;
+      height: 40px;
+      line-height: 40px;
+    }
+
+    .dark .load-name {
+      color: #ADADAD;
+    } */
+  </style>
+</head>
+<body>
+  <div id="app">
+    <!-- <div class="preload">
+       <div class="load-name">企业外包管理</div>
+      <div class="load-title">应用加载中，请稍等片刻...</div>
+    </div> -->
+  </div>
+  <script>
+    (function () {
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+      const setting = localStorage.getItem('color-schema') || 'auto'
+      if (setting === 'dark' || (prefersDark && setting !== 'light'))
+        document.documentElement.classList.toggle('dark', true)
+    })()
+    // document.querySelector('.preload').className = `preload ${
+    //     localStorage.getItem('vueuse-color-scheme')
+    // }`
+  </script>
+  <script type="module" src="/src/main.ts"></script>
+
+</body>
+</html>

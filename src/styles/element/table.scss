@@ -1,0 +1,17 @@
+.radio-table {
+  :deep(.el-table__header .el-checkbox) {
+    display: none;
+  }
+  :deep(.el-table__row) {
+    & > .el-table__cell:first-child {
+      .el-checkbox__inner {
+        border-radius: 50%;
+      }
+      .el-checkbox__inner::after {
+        @apply w-1 h-1 rounded-full bg-white absolute left-1/2 top-1/2;
+        content: '';
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+  }
+}
