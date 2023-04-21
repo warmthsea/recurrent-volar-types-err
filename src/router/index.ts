@@ -15,11 +15,6 @@ export const constantRoutes: Array<RouteRecordRaw> = [
       { path: '/index', name: 'index', component: () => import('../pages/index/index.vue') },
     ],
   },
-  {
-    path: '/:catchAll(.*)',
-    name: '404',
-    component: () => import('../components/catch/404.vue'),
-  },
 ]
 
 export const router = createRouter({
